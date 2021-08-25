@@ -139,13 +139,7 @@ textarea {
        display: block;
    }
 
-   .services::after{
-    content: url("../images/Blob_serv.png");
-    position: absolute;
-    z-index: 0;
-    right: 0px;
-    top: -60px;
-    }
+  
 
    .blocks {
        position: relative;
@@ -220,6 +214,14 @@ textarea {
         border-radius: 15px;
         box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
     }
+
+    .services::after{
+        content: url("../images/Blob_serv.png");
+        position: absolute;
+        z-index: 0;
+        right: 0px;
+        top: -60px;
+        }
  
 }
 
