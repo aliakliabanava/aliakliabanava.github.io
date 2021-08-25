@@ -1,0 +1,228 @@
+main {
+    min-height: 800px;
+}
+
+.about::after {
+    display: none;
+}
+
+input {
+    display: none;
+  }
+
+  label {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  input:not(:checked) + label {
+    font-weight: 200;
+  }
+  
+input:checked + label {
+    background-color: rgba(227, 235, 241, .4);
+  }
+  
+input:checked + label + .text {
+    display: block;
+    padding: 15px;
+  }
+  
+label + .text {
+    display: none;
+  }
+  
+label:hover {
+    background-color: rgba(227, 235, 241, .4);
+  }
+
+.our_customers {
+    display: flex;
+    margin: 100px 10px;
+    flex-direction: column;
+}
+
+.our_customers .overline {
+    color: #5D62B5;
+}
+
+.customer {
+    background-color: rgb(255, 254, 254);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.customer_name {
+    display: inline-block;
+    margin-left: 10px;
+   color: #F2726F;
+   font-weight: bold;
+   font-size: 14px;
+}
+
+section.banner {
+    -ms-flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+    padding: 0px 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #29C3BE;
+    color: white;
+}
+
+.banner_info {
+    padding: 10px 5px;
+    order: 1;
+    flex-basis: 100%;
+}
+
+.banner_pic img {
+    width: 100%;
+}
+
+.banner_info .appointment {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.banner_pic {
+    align-self: flex-end;
+    order: 2;
+    flex-basis: 100%;
+}
+
+@media (min-width: 540px) {
+    .our_customers {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 180px;
+        justify-content: space-between;
+    }
+
+    .customer_head {
+        flex-basis: 100%;
+    }
+
+    .customer {
+        flex-basis: 49%;
+    }
+
+    .banner_info {
+        align-self: center;
+        order: 2;
+        flex-basis: 50%;
+    }
+    
+    .banner_pic img {
+        width: 100%;
+    }
+    
+    .banner_pic {
+        margin-top: 20px;
+        order: 1;
+        flex-basis: 50%;
+    }
+
+    
+
+}
+
+@media (min-width: 960px) {
+    .tabs {
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255);
+        align-content: center;
+    }
+    
+    label {
+        border-radius: 0px;
+        flex-basis: 25%;
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+    }
+    
+    input:checked + label {
+        font-weight: 500;
+        border-bottom: 2px solid rgba(255, 255, 255);
+    }
+    
+    label:hover {
+        background-color: transparent;
+      }
+
+    input:checked + label {
+        background-color: transparent;
+      }
+
+    .text {
+        position: absolute;
+        top: 70px;
+        display: none;
+        width: inherit;
+        min-height: 300px;
+    }
+    
+    input:checked + label + .text {
+        display: block;
+    }
+    
+    .our_customers { 
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 380px;
+        justify-content: space-between;
+    }
+
+    .customer_head {
+        flex-basis: 32%;
+    }
+
+    .customer {
+        flex-basis: 32%;  
+    }
+
+    section.banner {
+        min-height: 350px;
+    }
+
+    .banner_pic {
+        z-index: 1;
+    }
+
+    .banner::after {
+        position: absolute;
+        bottom: 20px;
+        content: url("../images/Stylize\ Circles.png");
+        z-index: 0;
+    }
+
+    .banner::before {
+        position: absolute;
+        z-index: 1;
+        content: url("../images/Blob_banner.png");
+    }
+    .banner_info {
+        position: relative;
+        padding-top: 40px;
+    }
+
+    .banner_info h2 {
+        max-width: 400px;
+    }
+
+    .banner_info::after {
+        position: absolute;
+        right: 10px;
+        top: -20px;
+        content: url("../images/ball.png");
+    }
+}
+
+

@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+.services {
+    padding-top: 30px;
+    background-color: #F5F5F5;
+}
+
+.services .overline {
+    color: #5D62B5;
+}
+
+.make_appointment {
+    background-color: #5D62B5;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+.learn_more {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.learn_more .button {
+    width: 100px;
+}
+
+fieldset {
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 10px;
+}
+
+.button_in_form {
+    display: inline;
+    padding-top: 3px;
+    margin-bottom: 30px;
+}
+
+.app_input, select, textarea {
+    color: white;
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    background-color: #5D62B5;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 15px 5px;
+}
+
+::placeholder {
+    color: white;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.app_info {
+    display: none;
+}
+
+.blocks {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .block {
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 95%;
+    background-color: rgb(255, 254, 254);
+  }
+
+  .block:hover {
+    box-shadow: 0px 5px 9px 3px rgba(0,0,0,0.47);
+  }
+  
+  .icon_serv {
+    margin-bottom: 15px;
+    width: 50px;
+  }
+
+  .blocks h3{
+      padding: 0px;
+  } 
+
+  .wrapper {
+    width: 100%;
+    
+}
+  
+
+@media (min-width: 540px) {
+
+    .make_appointment {
+        position: relative;
+        background-image: url("../images/dogs2.png");
+        width: 100%;
+        min-height: 700px;
+        background-size: cover;
+        background-position: center;
+        padding-top: 50px;
+    }
+
+   .form_block {
+       margin: 0 auto;
+       background-color: #5D62B5;
+       display: block;
+       width: 450px;
+       border-radius: 15px;
+       box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+   }
+
+   .app_info {
+       float: right;
+       margin-top: 200px;
+       margin-right: 100px;
+       display: block;
+       width: 280px;
+       text-align: center;
+       font-size: 24px;
+       font-weight: bold;
+   }
+
+   .app_info span {
+       font-size: 48px;
+       display: block;
+   }
+
+   .blocks {
+    flex-direction: row;
+     justify-content: space-between;
+  }
+
+  .block {
+    margin-bottom: 15px;
+    flex-basis: 32%;
+  }
+
+  .wrapper {
+      width: 75%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+  }
+
+  .app_input, select, textarea {
+      width: 150px;
+  }
+
+  textarea {
+      width: 315px;
+  }
+
+}
+
+@media (max-width: 960px) {
+    
+
+    .app_info {
+        display: none;
+    }
+
+    .block {
+        flex-basis: 49%;
+    }
+
+    
+}
+
+@media (min-width: 960px) {
+    .make_appointment::after {
+        position: absolute;
+        top: 240px;
+        left: 40px;
+        content: url("../images/Stylize\ Circles.png");
+    }
+
+    .make_appointment::before {
+        z-index: 1;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 200px;
+        content: url("../images/blob2.png");
+        box-shadow:  0 0 3px #5D62B5;
+    }
+
+    .form_block {
+        z-index: 2;
+        position: absolute;
+        top: 80px;
+        left: 150px;
+        background-color: #5D62B5;
+        display: block;
+        width: 450px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+    }
+ 
+}
+

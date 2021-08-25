@@ -1,0 +1,636 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #F5F5F5;
+}
+p.body_text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+}
+
+.header {
+    padding: 0px 10px;
+}
+
+header.header {
+    background-image: url("../images/image_3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.register {
+    padding-top: 15px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 11px;
+}
+
+.icon {
+    font-size: 24px;
+    flex-basis: 33%;
+    order: 3;
+}
+
+.working_hours {
+    display: none;
+}
+
+.call {
+    display: none;
+}
+
+.appointment {
+    display: none;
+}
+
+.search_first {
+    order: 2;
+}
+
+.container {
+    position: relative;
+}
+
+.lupa {
+    display: inline-block;
+    margin-top: 5px;
+    flex-basis: 20%;
+    font-size: 22px;
+}
+
+.search_first input {
+    display: none;
+}
+
+ .container:hover input {
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 150px;
+}
+
+.navbar {
+    flex-basis: 45%;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.search_button {
+    border: none;
+    background-color: white;
+}
+
+.search_button::before {
+    font-size: 14px;
+    border: none;
+    font-family: "Font Awesome 5 free"; 
+	font-weight: 900;
+	content: "\f002";
+}
+
+.register input {
+    height: 25px;
+    width: 150px;
+    border: none;
+}
+
+.register input:focus {
+    outline: none;
+}
+
+.register form {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.header .head_info h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.head_info h1{
+    max-width: 450px;
+    margin-top: 50px;
+}
+
+.head_info .appointment {
+    display: block;
+    margin-top: 40px;
+}
+
+.head_info .appointment  .button{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.register .fas, .far {
+    color: #F2726F;
+    padding-top: 5px;;
+}
+
+.register p {
+   padding-left: 10px;
+}
+
+.naming {
+    text-transform: uppercase;
+}
+
+.button {
+    font-size: 11px;
+    cursor: pointer;
+    padding-top: 7px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #F2726F;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+
+.navbar-toggler {
+    padding: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link  {
+    padding-left: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    font-weight: 500;
+    background-color: rgba(227, 235, 241, .4);
+}
+
+.btn_nav:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.nav_form {
+    background-color: rgba(227, 235, 241, .4);
+    border: none;
+}
+
+.form_search {
+    display: none;
+}
+
+.about {
+    position: relative;
+    padding: 60px 50px;
+    display: block;
+    min-height: 450px;
+    color: white;
+    background-color: #5D62B5; 
+}
+
+section.about {
+    margin-bottom: -60px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.add_info_about {
+    padding-bottom: 10px;
+    width: 75%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_box {
+    padding: 5px;
+
+}
+
+.dog_center {
+    position: relative;
+    height: 200px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+div.dog_center img#dog {
+    position: absolute;
+    width: 350px;
+}
+
+.overline {
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.overline::before {
+    font-family: "Font Awesome 5 free"; 
+	font-weight: 900;
+	content: "\f101   ";
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.about h2 {
+    margin-bottom: 50px;
+}
+
+section.impact {
+    position: relative;
+    padding: 20px 15px;
+    min-height: 100px;
+    background-color: #29C3BE;
+    color: white;
+}
+
+.impact_items {
+    flex-wrap: wrap;
+}
+
+.impact_item img {
+    width: 35px;
+    padding-top: 10px;
+}
+
+.impact_item {
+    flex-wrap: wrap;
+}
+
+.impact_item span {
+    display: block;
+}
+
+.impact_item p {
+    color: #5D62B5;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+    width: 110px;
+}
+
+.number {
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.info_box img {
+    width: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+.info_box p {
+    padding-left: 65px;
+}
+
+ h3 {
+    color:#F2726F;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 65px;
+}
+
+footer .icon {
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+
+.footer_info { 
+    justify-content: space-between;
+    align-items: top;
+    padding: 10px;
+    font-size: 14px;
+}
+
+ .s_media .fab, .contact .fas {
+    padding-top: 3px;
+    color: #F2726F;  
+}
+
+.s_media .fab {
+    font-size: 24px;
+}
+
+.s_media {
+    justify-content: center;
+    border-bottom: 1px solid #5D62B5;
+    padding-bottom: 20px;
+}
+
+.links {
+    margin-top: 15px;
+    border-bottom: 1px solid #5D62B5;
+}
+
+.contact {
+    margin-top: 15px;
+}
+
+footer .naming{
+    font-weight: 500;
+}
+
+.links ul{
+    list-style-type: none;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.links li {
+    display: inline;
+    margin-right: 30px;
+    line-height: 30px;
+}
+
+.links li a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+.contact li {
+    display: block;
+}
+
+.contact .fas, .contact .far {
+    display: inline-block;
+    clear: both;
+    float: left;
+    /* height: 22px; */
+    margin-right: 15px;
+}
+
+.contact .fas {
+    margin-left: 2px;
+}
+
+.bottom {
+    display: block;
+    font-size: 12px;
+    height: 50px;
+    color: white;
+    padding: 12px 10px;
+    text-align: right;
+    background-color: #5D62B5;
+}
+
+
+@media (min-width: 540px) {
+
+    .nav_form {
+        background-color: white;
+    }
+
+    .nav_form:focus {
+        background-color: rgba(227, 235, 241, .4);
+        border: none;
+        box-shadow: none;
+    }
+
+    .container input {
+        display: inline;
+        position: absolute;
+        border-radius: 5px;
+        right: 40px;
+        height: 30px;
+        width: 180px;
+        top: 7px;
+    }
+
+    .container:hover input {
+        width: 180px;
+    }
+    
+
+    .form_search input {
+        height: 25px;
+        width: 150px;
+        border: none;
+    }
+
+    .navbar a:hover {
+        color: black;
+        background: none;
+    }
+
+    .nav_panel {
+        border-radius: 10px;
+        justify-content: space-between;
+        font-weight: 600;
+        margin-left: 0px !important;
+    }
+
+    .nav_items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header.header {
+        display: block;
+        min-height: 500px;
+    }
+
+    .head_info .appointment  .button {
+        border-radius: 5px;
+    }
+
+    .register, .navbar, .head_info {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    section.about {
+        margin: -60px auto;
+        width: 75%;
+        border-radius: 25px;
+    }
+
+    .dog_center {
+        height: 350px;
+        width: 600px;
+    }
+    
+    div.dog_center img#dog {
+        width: 600px;
+    }
+
+    .about h2 {
+        margin-right: 100px;
+    }
+
+    .add_info_about {
+       padding-bottom: 100px;
+       width: 75%;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+
+    .head_infobox {
+       flex-basis: 100%;
+    }
+
+    .info_box {
+       margin-top: 40px;
+       flex-basis: 50%;
+    }
+
+    section.impact::after {
+       border-radius: 25px;
+       position: absolute;
+       right: 150px;
+       top: -100px;
+       content: url("../images/pup300.png");
+    }
+
+    .impact_info {
+       width: 75%;
+       margin: 0 auto;
+    }
+
+    .impact_items {
+       padding-top: 40px;
+    }
+
+    .impact_item img {
+       width: 50px;
+    }
+
+    .number {
+       font-size: 28px;
+    }
+
+    footer {
+    justify-content: space-between;
+    background-color: #F5F5F5;
+     }
+
+    .footer_info {
+    padding: 100px 0px;
+    margin: 0 auto;
+    width: 75%;
+    }
+
+    .links ul{
+    column-count: 2;
+    text-align: left;
+    }
+
+    .links li{
+    display: block;
+    }
+
+    .s_media, .links {
+    border: none;
+    }
+
+    section.impact {
+    padding: 100px 0px;
+    min-height: 350px;
+    }
+ 
+}
+
+@media (min-width: 960px) {
+
+    .search_first {
+        display: none;
+    }
+
+    .working_hours {
+        display: flex;
+        flex-basis: 25%;
+    }
+
+    .working_hours span, .call span {
+        margin-bottom: 7px;
+        display: block;
+    }
+    
+    .call {
+        display: flex;
+        flex-basis: 25%;
+    }
+
+    .icon {
+        flex-basis: 20%;
+        order: 0;
+    }
+
+    .appointment {
+        flex-basis: 25%;
+    }
+
+    .register {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        order: 5;
+        flex-basis: 100%;
+    }
+
+    .nav_panel {
+        background-color: white;
+    }
+
+    .navbar-light .navbar-nav .nav-link  {
+        color: rgb(53, 52, 52);
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: rgb(53, 52, 52);
+        font-weight: 500;
+        background-color: rgba(227, 235, 241, .4);
+    }
+
+    .form_search {
+        display: inline;
+    }
+
+    .about::after {
+        position: absolute;
+        right: -10%;
+        top: -30%;
+        content: url("../images/Stylize\ Circles.png");
+     }
+
+    .info_box {
+        flex-basis: 33%;
+     }
+     
+     .appointment {
+        display: inline;
+        flex-basis: 25%;
+    }
+
+    .links, .contact {
+        margin-top: 0px;
+    }
+    
+    
+}
