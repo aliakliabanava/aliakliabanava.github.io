@@ -211,6 +211,7 @@ section.about {
     padding-bottom: 10px;
     width: 75%;
     margin: 0 auto;
+    margin-top: 30px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -250,6 +251,10 @@ h2 {
 
 .about h2 {
     margin-bottom: 50px;
+}
+
+.impact h2 {
+    width: 450px;
 }
 
 section.impact {
@@ -470,11 +475,11 @@ footer .naming{
 
     .dog_center {
         height: 350px;
-        width: 600px;
+        width: 700px;
     }
     
     div.dog_center img#dog {
-        width: 600px;
+        width: 700px;
     }
 
     .about h2 {
@@ -502,7 +507,7 @@ footer .naming{
        border-radius: 25px;
        position: absolute;
        right: 150px;
-       top: -100px;
+       top: -70px;
        content: url("../images/pup300.png");
     }
 
@@ -600,6 +605,13 @@ footer .naming{
 
     .navbar-light .navbar-nav .nav-link  {
         color: rgb(53, 52, 52);
+    }
+
+    .impact::before {
+        position: absolute;
+        content: url("../images/blob_dog.png");
+        right: 100px;
+        top: 0px;
     }
     
     .navbar-light .navbar-nav .nav-link:hover {

@@ -5,6 +5,7 @@
 .services {
     padding-top: 30px;
     background-color: #F5F5F5;
+    position: relative;
 }
 
 .services .overline {
@@ -138,9 +139,19 @@ textarea {
        display: block;
    }
 
+   .services::after{
+    content: url("../images/Blob_serv.png");
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+    top: -60px;
+    }
+
    .blocks {
+       position: relative;
+       z-index: 1;
     flex-direction: row;
-     justify-content: space-between;
+    justify-content: space-between;
   }
 
   .block {
@@ -153,6 +164,8 @@ textarea {
       margin: 0 auto;
       padding-bottom: 50px;
   }
+
+  
 
   .app_input, select, textarea {
       width: 150px;
