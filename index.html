@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/fonts/fa/css/all.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js" defer></script>
     <title>Petco</title>
  </head>
 <body>
@@ -40,7 +42,7 @@
           
                 <div class="collapse navbar-collapse nav_items" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav_items">
-                 <li class="nav-item active">
+                 <li class="nav-item">
                      <a class="nav-link item" href="services.html" title="Services Pepco">Services <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -93,10 +95,10 @@
                     <p class="overline">our impact</p>
                     <h2>Nemo enim ipsam voluptatem quia voluptas in proident</h2>
                     <div class="impact_items row">
-                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_duckling_24x.png" alt="dog duckling"><p><span class="number">3,700</span>puppy baths</p></div>
-                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_house_24px.png" alt="dog house"><p><span class="number">4,500</span>dogs boarded</p></div>
-                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_leash_24x.png" alt="leash"><p><span class="number">2,900</span>pups trained</p></div>
-                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_food_bowl_24x.png" alt="food"><p><span class="number">12k+</span>meals served</p></div>
+                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_duckling_24x.png" alt="dog duckling"><p><span class="number count" data-target="3700">0</span>puppy baths</p></div>
+                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_house_24px.png" alt="dog house"><p><span class="number count" data-target="4500">0</span>dogs boarded</p></div>
+                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_leash_24x.png" alt="leash"><p><span class="number count" data-target="2900">0</span>pups trained</p></div>
+                        <div class="impact_item col-sm-3 col-6"><img src="./assets/images/dog_food_bowl_24x.png" alt="food"><p><span class="number count" data-target="12100">0</span>meals served</p></div>
                     </div>
                 </div>
                 </section>

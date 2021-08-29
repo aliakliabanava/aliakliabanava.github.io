@@ -141,6 +141,7 @@ section.banner {
     }
     
     label {
+        margin-bottom: 0;
         border-radius: 0px;
         flex-basis: 25%;
         text-align: center;
@@ -162,6 +163,7 @@ section.banner {
       }
 
     .text {
+        border-radius: 15px;
         position: absolute;
         top: 70px;
         display: none;
