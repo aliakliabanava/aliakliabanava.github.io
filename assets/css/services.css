@@ -242,9 +242,7 @@ textarea {
     .block:hover .additional_info_serv {
         display: inline;
         transition-duration: 2s;
-        -webkit-transition-delay: .15s;
-        transform: translateX(0);
-        -webkit-transition-property: -webkit-transform;
+    
     }
 
     .services::after{

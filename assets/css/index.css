@@ -31,8 +31,12 @@ header.header {
 
 .icon {
     font-size: 24px;
-    flex-basis: 33%;
+    flex-basis: 13%;
     order: 3;
+}
+
+.icon span {
+    display: none;
 }
 
 .working_hours {
@@ -48,6 +52,7 @@ header.header {
 }
 
 .search_first {
+    flex-basis: 15%;
     order: 2;
 }
 
@@ -58,24 +63,24 @@ header.header {
 .lupa {
     display: inline-block;
     margin-top: 5px;
-    flex-basis: 20%;
+    flex-basis: 33%;
     font-size: 22px;
 }
 
-.search_first input {
-    display: none;
-}
-
- .container:hover input {
-    border-radius: 5px;
-    display: block;
+.container input {
+    display: inline;
     position: absolute;
+    border-radius: 5px;
+    left: -140px;
     height: 30px;
-    width: 150px;
+    width: 180px;
+    top: 7px;
 }
 
 .navbar {
-    flex-basis: 45%;
+    color: white;
+    padding: 0;
+    flex-basis: 70%;
 }
 
 .navbar-light .navbar-toggler {
@@ -225,13 +230,13 @@ section.about {
 .dog_center {
     position: relative;
     height: 200px;
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
 }
 
 div.dog_center img#dog {
     position: absolute;
-    width: 350px;
+    width: 300px;
 }
 
 .overline {
@@ -251,10 +256,6 @@ h2 {
 
 .about h2 {
     margin-bottom: 50px;
-}
-
-.impact h2 {
-    width: 450px;
 }
 
 section.impact {
@@ -384,8 +385,6 @@ footer .naming{
 .contact .fas, .contact .far {
     display: inline-block;
     clear: both;
-    float: left;
-    /* height: 22px; */
     margin-right: 15px;
 }
 
@@ -406,6 +405,11 @@ footer .naming{
 
 @media (min-width: 540px) {
 
+    .container input {
+        width: 220px;
+        left: -220px;
+    }
+
     .nav_form {
         background-color: white;
     }
@@ -414,27 +418,6 @@ footer .naming{
         background-color: rgba(227, 235, 241, .4);
         border: none;
         box-shadow: none;
-    }
-
-    .container input {
-        display: inline;
-        position: absolute;
-        border-radius: 5px;
-        right: 40px;
-        height: 30px;
-        width: 180px;
-        top: 7px;
-    }
-
-    .container:hover input {
-        width: 180px;
-    }
-    
-
-    .form_search input {
-        height: 25px;
-        width: 150px;
-        border: none;
     }
 
     .navbar a:hover {
@@ -476,11 +459,11 @@ footer .naming{
 
     .dog_center {
         height: 350px;
-        width: 700px;
+        width: 500px;
     }
     
     div.dog_center img#dog {
-        width: 700px;
+        width: 500px;
     }
 
     .about h2 {
@@ -502,14 +485,6 @@ footer .naming{
     .info_box {
        margin-top: 40px;
        flex-basis: 50%;
-    }
-
-    section.impact::after {
-       border-radius: 25px;
-       position: absolute;
-       right: 150px;
-       top: -70px;
-       content: url("../images/pup300.png");
     }
 
     .impact_info {
@@ -586,6 +561,10 @@ footer .naming{
         order: 0;
     }
 
+    .icon span {
+        display: inline;
+    }
+
     .appointment {
         flex-basis: 25%;
     }
@@ -644,6 +623,26 @@ footer .naming{
     .links, .contact {
         margin-top: 0px;
     }
+
+    .impact h2 {
+        width: 450px;
+    }
     
+    section.impact::after {
+        border-radius: 25px;
+        position: absolute;
+        right: 150px;
+        top: -70px;
+        content: url("../images/pup300.png");
+     }
+
+     .dog_center {
+        
+        width: 700px;
+    }
+    
+    div.dog_center img#dog {
+        width: 700px;
+    }
     
 }
