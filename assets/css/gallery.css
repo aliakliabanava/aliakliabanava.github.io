@@ -6,6 +6,10 @@ main {
     display: none;
 }
 
+.about {
+    padding: 30px 10px;
+}
+
 input {
     display: none;
   }
@@ -63,6 +67,7 @@ label:hover {
 }
 
 section.banner {
+    flex-wrap: wrap;
     margin-top: 100px;
     position: relative;
     padding: 0px 5px;
@@ -94,6 +99,10 @@ section.banner {
 }
 
 @media (min-width: 540px) {
+    .about {
+        padding: 60px 50px;
+    }
+
     .our_customers {
         flex-direction: row;
         flex-wrap: wrap;
