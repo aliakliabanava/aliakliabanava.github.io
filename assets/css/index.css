@@ -151,6 +151,7 @@ header.header {
 }
 
 .button {
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
     font-size: 11px;
     cursor: pointer;
     padding-top: 7px;
@@ -164,6 +165,12 @@ header.header {
     width: 200px;
     height: 30px;
     border: none;
+}
+
+.button:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    -webkit-transition: transform 0.8s ease-in-out;
 }
 
 .navbar-toggler {
@@ -580,6 +587,7 @@ footer .naming{
     }
 
     .nav_panel {
+        padding: 5px 5px;
         background-color: white;
     }
 

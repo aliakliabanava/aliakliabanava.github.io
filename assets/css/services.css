@@ -42,6 +42,7 @@ h1 {
 .learn_more {
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 .learn_more .button {
     width: 100px;
@@ -101,10 +102,9 @@ textarea {
     background-color: rgb(255, 254, 254);
   }
 
-  .additional_info_serv {
-    display: none;
-}
-
+  div#sub {
+      display: none;
+  }
 
   .block:hover {
     box-shadow: 0px 5px 9px 3px rgba(0,0,0,0.47);
@@ -167,8 +167,8 @@ textarea {
    .blocks {
        position: relative;
        z-index: 1;
-    flex-direction: row;
-    justify-content: space-between;
+       flex-direction: row;
+       justify-content: space-between;
   }
 
   .block {
@@ -243,14 +243,13 @@ textarea {
 
     .block:hover {
         animation: divAnimation 3s infinite;
-        transform: translateY(0);
+        z-index: 1;
     }
 
-    .block:hover .additional_info_serv {
-        display: inline;
-        transition-duration: 2s;
-    
+    .block {
+        padding-bottom: 40px;
     }
+
 
     .services::after{
         content: url("../images/Blob_serv.png");
@@ -259,6 +258,31 @@ textarea {
         right: 0px;
         top: -60px;
         }
+
+        div#sub {
+            display: inline;
+        }
+
+        div.block{
+            position:relative;
+            overflow:hidden;
+        }
+        div.block:hover > #sub{
+            bottom: 5px;
+            
+        }
+        div#sub{
+            right: calc(50% - 50px);
+            position:absolute;
+            bottom:-50px;
+            height:30px;
+            -webkit-transition: bottom 0.8s ease;
+        }
+
+        #sub .learn_more {
+            margin: 0;
+        }
+        
  
 }
 
