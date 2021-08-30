@@ -178,6 +178,11 @@ section.banner {
         width: inherit;
         min-height: 300px;
     }
+
+    iframe {
+        /* height: 360px; */
+        border-radius: 25px;
+    }
     
     input:checked + label + .text {
         display: block;
