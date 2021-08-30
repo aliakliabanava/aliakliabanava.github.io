@@ -1,7 +1,6 @@
 function ValidateEmail() {
     var mailformat = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     element = document.getElementById('emailinput');
-    console.log(element.value);
     if (element.value.match(mailformat)) {
         element.classList.remove("service_form_error");
     } else {
@@ -14,7 +13,6 @@ function ValidateEmail() {
 function ValidatePhone() {
     var phoneformat = /\+[0-9]{3}-[0-9]{2}-[0-9]{7}/;
     element = document.getElementById('phoneinput');
-    console.log(element.value);
     if (element.value.match(phoneformat)) {
         element.classList.remove("service_form_error");
     } else {
@@ -27,7 +25,6 @@ function ValidatePhone() {
 function ValidateSelect() {
     // var phoneformat = /\+[0-9]{3}-[0-9]{2}-[0-9]{7}/;
     element = document.getElementById('serviceinput');
-    console.log(element.value);
     if (element.value != 0) {
         element.classList.remove("service_form_error");
     }
@@ -41,7 +38,6 @@ function ValidateSelect() {
 function ValidateName() {
     var nameformat = /^[а-яА-ЯёЁa-zA-Z]+$/;
     element = document.getElementById('nameinput');
-    console.log(element.value);
     if (element.value.match(nameformat)) {
         element.classList.remove("service_form_error");
     }
